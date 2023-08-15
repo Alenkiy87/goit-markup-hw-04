@@ -382,13 +382,21 @@ ol {
   border: 1px solid var(--lightslate);
   cursor: pointer;
   padding: 16px 32px;
+  height: 88px;
+  color: #8e8f99;
 }
 .customers-icon {
-  fill: var(--lightslate);
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon:hover {
-  fill: var(--ocean);
+  color: var(--ocean);
+}
+.customers-item-logo:hover,
+.customers-item-logo:focus {
+  border-color: #404bbf;
 }
 .customers-link {
   display: flex;
