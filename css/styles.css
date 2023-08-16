@@ -386,6 +386,8 @@ ol {
   padding: 16px 32px;
   height: 88px;
   color: #8e8f99;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon {
   width: 104px;
@@ -394,12 +396,13 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon:hover,
-.customers-icon:hover {
+.customers-icon:focus {
   color: var(--ocean);
 }
 .customers-item-logo:hover,
 .customers-item-logo:focus {
-  border-color: #404bbf;
+  border-color: var(--ocean);
+  color: var(--ocean);
 }
 .customers-link {
   display: flex;
@@ -506,8 +509,8 @@ ol {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item.btn:hover,
-.portfolio-item.btn:focus {
+.potrfolio-it .portfolio-item.btn:hover,
+.potrfolio-it .portfolio-item.btn:focus {
   background-color: var(--ocean);
   color: #ffffff;
   border: 1px solid transparent;
@@ -546,6 +549,15 @@ ol {
 
 .portfolio-menu-item {
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-menu-item:hover,
+.portfolio-menu-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-menu-item:hover .portfolio-cover {
@@ -614,6 +626,8 @@ ol {
   background-color: rgba(46, 47, 66, 0.4);
   top: 0;
   left: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   visibility: hidden;
@@ -624,7 +638,7 @@ ol {
   position: absolute;
   top: 50%;
   left: 50%;
-  translate: (-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
   flex-shrink: 0;
@@ -650,4 +664,22 @@ ol {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) border 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.data-modal-close:hover,
+.data-modal-close:focus {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--white);
+}
+.modal-icon {
+  width: 8px;
+  height: 8px;
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* fill: #2e2f42; */
+}
+/* .modal-icon:hover,
+.modal-icon:focus {
+  fill: va;
+} */
