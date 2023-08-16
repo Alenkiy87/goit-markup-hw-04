@@ -489,7 +489,11 @@ ol {
   display: block;
   cursor: pointer;
 }
-
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .potrfolio-it .portfolio-item.btn {
   color: var(--iris);
   background-color: var(--cloud);
@@ -503,12 +507,13 @@ ol {
   border-radius: 4px;
   align-items: center;
   border: 1px solid var(--cornflower);
-  /* transition-property: color, background-color;
-  transition-duration: 300ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), ease; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.potrfolio-it:hover,
+.potrfolio-it:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .potrfolio-it .portfolio-item.btn:hover,
 .potrfolio-it .portfolio-item.btn:focus {
   background-color: var(--ocean);
